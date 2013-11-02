@@ -1,0 +1,18 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <%= link_to "VetRx", root_path, id: "logo" %>
+      <nav>
+        <ul class="nav pull-right">
+          <li><%= link_to t(".home"),    root_path %></li>
+          <li><%= link_to t(".help"),    help_path %></li>
+          <li><%= link_to t(".sign_in"), '#' %></li>
+        </ul>
+      </nav>
+      Language:
+        <%= link_to_unless_current "English", locale: "en" %> |
+        <%= link_to_unless_current "Español", locale: "es" %> |
+        <%= link_to_unless_current "Català", locale: "ca" %>
+    </div>
+  </div>
+</header>

@@ -1,2 +1,11 @@
-<h1>VetRx</h1>
-<p>This is the home page for the VetRx application.</p>
+<div class="center hero-unit">
+  <h1><%= t(".welcome") %></h1>
+
+  <h2>
+    <%= t ".description" %>
+  </h2>
+
+  <%= link_to t(".sign_up"), '#', class: "btn btn-large btn-primary" %>
+</div>
+
+<%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
