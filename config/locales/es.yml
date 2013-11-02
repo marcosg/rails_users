@@ -202,13 +202,22 @@ es:
       welcome: Bienvenido a la aplicación VetRx
       description: Esta es la página de inicio de VetRx.
       sign_up: ¡Inscribase Ahora!
+    help:
+      title: Ayuda
+      description: VetRx página de ayuda
+    about:
+      title: Información de VetRx
+      description: Información sobre la aplicación VetRx
+    contact:
+      title: Contactar
+      description_html: Contactar con VetRx sobre la aplicación en la <a href="http://railstutorial.org/contact">página de contacto</a>.
   layouts:
     header:
       home: Inicio
       help: Ayuda
       sign_in: Entrar
     footer:
-      about: Sobre la aplicación
+      about: Información
       contact: Contactar
       credit: Applicación VetRx creada por Cuñao Software
 

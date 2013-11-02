@@ -236,6 +236,15 @@ en:
       welcome: Welcome to the VetRx Application
       description: This is the home page for VetRx.
       sign_up: Sign up now!
+    help:
+      title: Help
+      description: VetRx help page
+    about:
+      title: About VetRx
+      description: This is the about page for the VetRx application
+    contact:
+      title: Contact
+      description_html: Contact VetRx about the application at the <a href="http://railstutorial.org/contact">contact page</a>.
   layouts:
     header:
       home: Home
