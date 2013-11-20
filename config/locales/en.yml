@@ -245,6 +245,12 @@ en:
     contact:
       title: Contact
       description_html: Contact VetRx about the application at the <a href="http://railstutorial.org/contact">contact page</a>.
+
+  users:
+    new:
+      title: Sign up
+      description: Sign up
+
   layouts:
     header:
       home: Home

@@ -211,6 +211,12 @@ es:
     contact:
       title: Contactar
       description_html: Contactar con VetRx sobre la aplicación en la <a href="http://railstutorial.org/contact">página de contacto</a>.
+
+  users:
+    new:
+      title: Inscribase
+      description: Inscribase
+
   layouts:
     header:
       home: Inicio
