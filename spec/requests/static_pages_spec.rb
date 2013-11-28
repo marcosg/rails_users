@@ -19,26 +19,26 @@ describe "Static pages" do
     end
 
     describe "switch to Spanish" do
-      before do 
+      before do
         click_link "Español"
       end
 
       it do 
-        #puts "clicked_link Español: #{current_path}"
         should have_content('Ayuda')
       end          
 
       describe "and follow a link" do
         before do 
           click_link "Contactar"
-          #puts "click_link Contactar: #{current_path}"
+          #puts "clicked_link Contactar: #{current_path}"
         end
         
         it "should have_content('Contactar')" do
-          pending "preserve non-default relative paths in test"
+          should have_content('Contactar')
         end
       end
     end
+    after { visit root_path(locale: "en") }
   end
 
   describe "Home page" do
