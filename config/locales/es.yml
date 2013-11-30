@@ -227,3 +227,32 @@ es:
       contact: Contactar
       credit: Applicación VetRx creada por Cuñao Software
 
+  simple_form:
+    "yes": 'Sí'
+    "no": 'No'
+    required:
+      text: 'obligatorio'
+      mark: '*'
+    error_notification:
+      default_message: "Por favor revise los problemas abajo:"
+
+    labels:
+      user:
+        name: 'Nombre'
+        organization: Organización      
+        password: 'Contraseña'
+        email: 'Email'
+        password_confirmation: 'Confirmar Contraseña'
+        edit:
+          username: 'Cambiar nombre de usuario'
+          password: 'Cambiar Contraseña'
+
+  activerecord:
+    models:
+      user:
+        one: "Cuenta de Usuario"
+        other: "Cuentas de Usuario"
+
+  user_created_flash: '¡Hola %{user_name}! Su cuenta se creó correctamente.'
+
+

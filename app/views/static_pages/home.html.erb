@@ -1,3 +1,8 @@
+<ul class="nav pull-center">
+  <%= link_to_unless_current "English", locale: "en" %> |
+  <%= link_to_unless_current "Español", locale: "es" %> |
+  <%= link_to_unless_current "Català", locale: "ca" %>
+</ul>
 <div class="center hero-unit">
   <h1><%= t(".welcome") %></h1>
 

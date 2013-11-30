@@ -230,7 +230,12 @@ en:
   activerecord:
     errors:
       <<: *errors
-  
+
+  helpers:
+    submit:
+      some_form:
+        create: "http://(token to fix sublime colors) Create my account (button text"
+
   static_pages:
     home:
       welcome: Welcome to the VetRx Application
@@ -260,4 +265,31 @@ en:
       about: About
       contact: Contact
       credit: VetRx application by Cuñao Software
+
+  simple_form:
+    "yes": 'Yes'
+    "no": 'No'
+    required:
+      text: 'required'
+      mark: '*'
+    error_notification:
+      default_message: "Please review the problems below:"
+    labels:
+      user:
+        name: 'User name'
+        email: 'Email'
+        organization: Organization
+        password: 'Password'
+        password_confirmation: 'Confirm Password'
+        edit:
+          username: 'Change user name'
+          password: 'Change password'
+
+  activerecord:
+    models:
+      user:
+        one: "User Account"
+        other: "User Accounts"
+
+  user_created_flash: "Hello %{user_name}! Your user account was created correctly."
 

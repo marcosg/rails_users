@@ -11,11 +11,11 @@ describe "Static pages" do
 
   describe "Language links" do
     before do
-      visit help_path
+      visit root_path
     end
 
     it do 
-      should have_content('Help') 
+      should have_content('Welcome') 
     end
 
     describe "switch to Spanish" do
@@ -24,7 +24,7 @@ describe "Static pages" do
       end
 
       it do 
-        should have_content('Ayuda')
+        should have_content('Bienvenido')
       end          
 
       describe "and follow a link" do
