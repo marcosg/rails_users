@@ -1,0 +1,13 @@
+<% provide(:title, t(".title")) %>
+<h1><%= t ".title" %></h1>
+
+<%= simple_form_for(:session, url: sessions_path) do |f| %>
+	<%= f.error_notification %>
+	<%= f.input :email %>
+	<%= f.input :password %>
+	<%= f.error :base %>
+	<%= f.button :submit, t(".sign_in_button"), :class => "btn-primary" %>
+<% end %>
+
+<br><p>New user? <%= link_to "Sign up now!", signup_path %></p>
+

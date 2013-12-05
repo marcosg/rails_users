@@ -197,6 +197,12 @@ es:
   activerecord:
     errors:
       <<: *errors
+
+  helpers:
+    submit:
+      some_form:
+        create: "http://(token to fix sublime colors) Create my account (button text"
+
   static_pages:
     home:
       welcome: Bienvenido a la aplicación VetRx
@@ -217,11 +223,21 @@ es:
       title: Inscribase
       description: Inscribase
 
+  sessions:
+    new:
+      title: Entrar
+      description: Entrar
+      sign_in_button: Entrar
+
   layouts:
     header:
       home: Inicio
       help: Ayuda
+      users: Usuarios
+      profile: Perfile
+      settings: Ajustes
       sign_in: Entrar
+      sign_out: Salir
     footer:
       about: Información
       contact: Contactar
@@ -237,7 +253,7 @@ es:
       default_message: "Por favor revise los problemas abajo:"
 
     labels:
-      user:
+      defaults:
         name: 'Nombre'
         organization: Organización      
         password: 'Contraseña'

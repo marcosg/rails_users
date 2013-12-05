@@ -9,6 +9,7 @@ describe "User pages" do
     before { visit user_path(user) }
 
     it { should have_content(user.name) }
+    it { should have_content(user.organization) }
     it { should have_title(user.name) }
   end
 
@@ -64,9 +65,15 @@ describe "User pages" do
         before { click_button submit }
         let(:user) { User.find_by(email: 'hexample@example.com') }
 
+        it { should have_link('Sign out') }
         it { should have_title(user.name) }
-        it { should have_selector('div.alert.alert-success', text: 'created') }
-      end      
+        it { should have_success_message('created') }
+        describe "followed by signout" do
+          before { click_link "Sign out" }
+
+          it { should have_link('Sign in') }
+        end          
+      end  
     end
   end
 end

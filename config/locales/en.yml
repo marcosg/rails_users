@@ -234,7 +234,7 @@ en:
   helpers:
     submit:
       some_form:
-        create: "http://(token to fix sublime colors) Create my account (button text"
+        create: "http://(token to fix sublime colors) Create my account (button text)"
 
   static_pages:
     home:
@@ -256,11 +256,21 @@ en:
       title: Sign up
       description: Sign up
 
+  sessions:
+    new:
+      title: Sign in
+      description: Sign in
+      sign_in_button: Sign in
+
   layouts:
     header:
       home: Home
       help: Help
+      users: Users
+      profile: Profile
+      settings: Settings
       sign_in: Sign in
+      sign_out: Sign out
     footer:
       about: About
       contact: Contact
@@ -275,7 +285,7 @@ en:
     error_notification:
       default_message: "Please review the problems below:"
     labels:
-      user:
+      defaults:
         name: 'User name'
         email: 'Email'
         organization: Organization
