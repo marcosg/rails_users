@@ -255,7 +255,6 @@ es:
     labels:
       defaults:
         name: 'Nombre'
-        organization: Organización      
         password: 'Contraseña'
         email: 'Email'
         password_confirmation: 'Confirmar Contraseña'

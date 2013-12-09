@@ -52,7 +52,6 @@ describe "User pages" do
     describe "with valid information" do
       before do
         fill_in "User name",        with: "Happy Example"
-        fill_in "Organization",     with: "Happy Example"
         fill_in "Email",            with: "hexample@example.com"
         fill_in "Password",         with: "password", match: :prefer_exact
         fill_in "Confirm Password", with: "password"

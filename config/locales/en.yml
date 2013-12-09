@@ -288,7 +288,6 @@ en:
       defaults:
         name: 'User name'
         email: 'Email'
-        organization: Organization
         password: 'Password'
         password_confirmation: 'Confirm Password'
         edit:
