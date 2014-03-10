@@ -172,7 +172,7 @@ describe "User pages" do
   end
 
   describe "forbidden actions" do
-    describe "admin" do
+    describe "admin user" do
       let(:admin) { FactoryGirl.create(:admin) }
       before do
         sign_in admin, no_capybara: true
