@@ -222,6 +222,17 @@ es:
     new:
       title: Inscribase
       description: Inscribase
+    edit:
+      title: Modificar usuario
+      description: Actualizar su perfil
+    index:
+      title: Todos los usuarios
+      description: Todos los Usuarios
+    flash:
+      destroyed: "Usuario %{user_name} borrado."
+      updated: "Usuario %{user_name} actualizado."
+      created: '¡Hola %{user_name}! Su usuario se creó correctamente.'
+      sign_in: "Por favor entre su Usuario y Contraseña."
 
   sessions:
     new:
@@ -260,14 +271,12 @@ es:
         password_confirmation: 'Confirmar Contraseña'
         edit:
           username: 'Cambiar nombre de usuario'
-          password: 'Cambiar Contraseña'
+          password: 'Contraseña Nueva'
 
   activerecord:
     models:
       user:
         one: "Cuenta de Usuario"
         other: "Cuentas de Usuario"
-
-  user_created_flash: '¡Hola %{user_name}! Su cuenta se creó correctamente.'
 
 

@@ -1,0 +1,13 @@
+
+<%= simple_form_for(@user) do |f| %>
+	<%= f.error_notification %>
+	<%= f.input :name %>
+	<%= f.input :email %>
+	<%= f.input :password %>
+	<%= f.input :password_confirmation %>
+	<%= f.error :base %>
+	<%= f.button :submit, :class => "btn-primary" %>
+<% end %>
+
+<%= gravatar_for @user %>
+<%= link_to "change",  "http://gravatar.com/emails", target: "_blank" %>

@@ -255,6 +255,17 @@ en:
     new:
       title: Sign up
       description: Sign up
+    edit:
+      title: Edit user
+      description: Update your profile
+    index:
+      title: All users
+      description: All Users
+    flash:
+      destroyed: "User %{user_name} was deleted."
+      updated: "User %{user_name} was updated."
+      created: "Hello %{user_name}! Your user account was created correctly."
+      sign_in: "Please sign in."
 
   sessions:
     new:
@@ -292,7 +303,7 @@ en:
         password_confirmation: 'Confirm Password'
         edit:
           username: 'Change user name'
-          password: 'Change password'
+          password: 'New password'
 
   activerecord:
     models:
@@ -300,5 +311,4 @@ en:
         one: "User Account"
         other: "User Accounts"
 
-  user_created_flash: "Hello %{user_name}! Your user account was created correctly."
 
